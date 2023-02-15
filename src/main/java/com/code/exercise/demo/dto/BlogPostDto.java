@@ -5,17 +5,22 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
+import java.time.LocalDateTime;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeDto {
+public class BlogPostDto {
 
-    private UUID id;
+    private Long id;
 
-    private String name;
+    private String title;
 
-    private Integer version;
+    private String contents;
+
+    private Long categoryId;
+
+    private LocalDateTime timestamp;
+
 }

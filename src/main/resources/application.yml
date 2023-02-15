@@ -10,8 +10,6 @@ spring:
     password: postgres
   http:
     log-request-details: true
-management:
-  endpoints:
-    web:
-      exposure:
-        include: mappings
+
+server:
+  port: 5001
